@@ -1,0 +1,21 @@
+{
+  "auth": {
+    "identity": {
+      "methods": ["password"],
+      "password": {
+        "user": {
+          "id": "bknowacki",
+          "password": ""
+        }
+      }
+    },
+    "scope": {
+      "project": {
+        "domain": {
+          "name": "OCS"
+        },
+        "id": "47be012a5626431ea46343e370876afd"
+      }
+    }
+  }
+}

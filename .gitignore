@@ -1,2 +1,5 @@
 projects/*/data
+projects/*/data-compressed
+data.tgz
+
 .DS_Store

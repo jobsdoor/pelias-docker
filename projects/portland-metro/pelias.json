@@ -5,9 +5,7 @@
   },
   "esclient": {
     "apiVersion": "7.5",
-    "hosts": [
-      { "host": "elasticsearch" }
-    ]
+    "hosts": [{ "host": "elasticsearch" }]
   },
   "elasticsearch": {
     "settings": {
@@ -40,9 +38,7 @@
       "enabled": true
     },
     "blacklist": {
-      "files": [
-        "/data/blacklist/osm.txt"
-      ]
+      "files": ["/data/blacklist/osm.txt"]
     },
     "csv": {
       "datapath": "/data/csv",
@@ -57,13 +53,17 @@
     },
     "openstreetmap": {
       "download": [
-        { "sourceURL": "https://data.geocode.earth/archive/portland-metro/2022-06-20/portland_oregon.osm.pbf" }
+        {
+          "sourceURL": "https://data.geocode.earth/archive/portland-metro/2022-06-20/portland_oregon.osm.pbf"
+        }
       ],
       "leveldbpath": "/tmp",
       "datapath": "/data/openstreetmap",
-      "import": [{
-        "filename": "portland_oregon.osm.pbf"
-      }]
+      "import": [
+        {
+          "filename": "portland_oregon.osm.pbf"
+        }
+      ]
     },
     "openaddresses": {
       "datapath": "/data/openaddresses",
@@ -79,16 +79,13 @@
     },
     "polyline": {
       "datapath": "/data/polylines",
-      "files": [ "extract.0sv" ]
+      "files": ["extract.0sv"]
     },
     "whosonfirst": {
       "datapath": "/data/whosonfirst",
       "importPostalcodes": true,
       "countryCode": "US",
-      "importPlace": [
-        "85688513",
-        "85688623"
-      ]
+      "importPlace": ["85688513", "85688623"]
     },
     "transit": {
       "datapath": "/data/transit",
@@ -156,11 +153,31 @@
         "tiger": {
           "datapath": "/data/tiger",
           "states": [
-            { "state_code": 41, "county_code": 67, "name": "Washington County, OR" },
-            { "state_code": 41, "county_code": 51, "name": "Multnomah County, OR" },
-            { "state_code": 41, "county_code": 5,  "name": "Clackamas County, OR" },
-            { "state_code": 41, "county_code": 71, "name": "Yamhill County, OR" },
-            { "state_code": 41, "county_code": 47, "name": "Marion County, OR" },
+            {
+              "state_code": 41,
+              "county_code": 67,
+              "name": "Washington County, OR"
+            },
+            {
+              "state_code": 41,
+              "county_code": 51,
+              "name": "Multnomah County, OR"
+            },
+            {
+              "state_code": 41,
+              "county_code": 5,
+              "name": "Clackamas County, OR"
+            },
+            {
+              "state_code": 41,
+              "county_code": 71,
+              "name": "Yamhill County, OR"
+            },
+            {
+              "state_code": 41,
+              "county_code": 47,
+              "name": "Marion County, OR"
+            },
             { "state_code": 41, "county_code": 53, "name": "Polk County, OR" },
             { "state_code": 53, "county_code": 11, "name": "Clark County, WA" }
           ]

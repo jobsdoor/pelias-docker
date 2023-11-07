@@ -83,17 +83,13 @@
     },
     "polyline": {
       "datapath": "/data/polylines",
-      "files": [
-        "extract.0sv"
-      ]
+      "files": ["extract.0sv"]
     },
     "whosonfirst": {
       "datapath": "/data/whosonfirst",
       "countryCode": "PL",
       "importPostalcodes": false,
-      "importPlace": [
-        "85633723"
-      ]
+      "importPlace": ["85633723"]
     }
   }
 }

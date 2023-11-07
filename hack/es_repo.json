@@ -1,0 +1,8 @@
+{
+  "type": "s3",
+  "settings": {
+    "bucket": "pelias-es-snapshots",
+    "endpoint": "ocs-pl.oktawave.com",
+    "protocol": "https"
+  }
+}

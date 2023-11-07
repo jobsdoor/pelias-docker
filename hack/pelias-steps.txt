@@ -1,0 +1,20 @@
+1. register es snapshot repository
+  - https://www.elastic.co/guide/en/elasticsearch/reference/7.17/snapshots-register-repository.html
+  - https://www.elastic.co/guide/en/elasticsearch/plugins/7.17/repository-s3-client.html
+  - create keystore volume: 
+      - https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html#docker-keystore-bind-mount
+      - keystore cli: https://www.elastic.co/guide/en/elasticsearch/reference/7.17/elasticsearch-keystore.html
+  - analyze: gradually increase params
+      - https://www.elastic.co/guide/en/elasticsearch/reference/current/repo-analysis-api.html
+      - curl -X POST "localhost:9200/_snapshot/ocs/_analyze?blob_count=10&max_blob_size=1mb&timeout=120s&pretty"
+
+2. create es snapshot
+  - https://www.elastic.co/guide/en/elasticsearch/reference/7.17/create-snapshot-api.html#create-snapshot-api
+  - curl -X PUT "localhost:9200/_snapshot/ocs/$(date +%d-%m-%g-%s)?pretty"
+  - get all snapshots: curl -X GET "localhost:9200/_snapshot/ocs/_all?pretty" 
+
+for fs repo
+1. set config
+  path:
+    repo:
+      - /usr/share/elasticsearch/snapshots
